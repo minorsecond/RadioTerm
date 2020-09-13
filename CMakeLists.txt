@@ -10,7 +10,7 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 find_package(Qt5 COMPONENTS Core Widgets REQUIRED)
 find_package(Boost COMPONENTS filesystem)
-find_package(Catch2 REQUIRED)
+#find_package(Catch2 REQUIRED)
 
 set(ICON_NAME "icon.icns")
 set(ICON_PATH ${PROJECT_SOURCE_DIR}/res/${ICON_NAME})
@@ -23,7 +23,7 @@ add_executable(RadioTerm src/main.cpp src/mainwindow.cpp src/mainwindow.h)
 set_target_properties(RadioTerm PROPERTIES MACOSX_BUNDLE_ICONFILE ${ICON_NAME})
 target_link_libraries(RadioTerm Qt5::Core Qt5::Widgets SQLite3 Boost::filesystem)
 
-include(CTest)
-include(Catch)
+#include(CTest)
+#include(Catch)
 #catch_discover_tests(functions_test)
 #add_test(NAME functions_test COMMAND functions_test)
