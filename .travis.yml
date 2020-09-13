@@ -20,7 +20,7 @@ before_script:
 script:
   - cmake --build . --target Beertabs -- -j$core_count
   - cmake --build . --target functions_test -- -j$core_count
-  - ctest functions_test
+  - #ctest functions_test
   - macdeployqt RadioTerm.app -always-overwrite -appstore-compliant
   - zip -r RadioTerm.zip RadioTerm.app
 
