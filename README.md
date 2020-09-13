@@ -1,1 +1,9 @@
 # RadioTerm
+
+A packet radio terminal for macOS.
+
+### Status
+| Branch                                                              | Build Status                                                                                                                   | Code Review                                                                                                                                                                  |
+|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [ `master`](https://github.com/minorsecond/RadioTerm/tree/master)   | [![Build Status](https://travis-ci.com/minorsecond/RadioTerm.svg?branch=master)](https://travis-ci.com/minorsecond/RadioTerm)  | [![Codacy Badge](https://app.codacy.com/project/badge/Grade/0413d8d6ee1d446a964c068fc6834af5)](https://www.codacy.com/manual/minorsecond/RadioTerm?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=minorsecond/RadioTerm&amp;utm_campaign=Badge_Grade) |
+| [ `develop`](https://github.com/minorsecond/RadioTerm/tree/develop) | [![Build Status](https://travis-ci.com/minorsecond/RadioTerm.svg?branch=develop)](https://travis-ci.com/minorsecond/RadioTerm) | [![Codacy Badge](https://app.codacy.com/project/badge/Grade/0413d8d6ee1d446a964c068fc6834af5)](https://www.codacy.com/manual/minorsecond/RadioTerm?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=minorsecond/RadioTerm&amp;utm_campaign=Badge_Grade) |
