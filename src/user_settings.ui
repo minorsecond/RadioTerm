@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="4" column="0">
+    <widget class="QLabel" name="hostPortLabel">
+     <property name="text">
+      <string>Host port:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="hostIPLabel">
+     <property name="text">
+      <string>Host IP:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QLineEdit" name="hostPortInput"/>
+   </item>
+   <item row="5" column="1">
+    <widget class="QLineEdit" name="paclenInput"/>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="pacLenLabel">
+     <property name="text">
+      <string>Paclen:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="digipeatersLabel">
+     <property name="text">
+      <string>Digipeaters:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QLineEdit" name="hostIPInput"/>
+   </item>
+   <item row="2" column="1">
+    <widget class="QLineEdit" name="digipeatersInput"/>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="userCallsignLabel">
+     <property name="text">
+      <string>Callsign:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QLineEdit" name="callSignInput"/>
+   </item>
+   <item row="1" column="2" rowspan="2">
+    <widget class="QDialogButtonBox" name="userSettingsButtons">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>callSignInput</tabstop>
+  <tabstop>digipeatersInput</tabstop>
+  <tabstop>hostIPInput</tabstop>
+  <tabstop>hostPortInput</tabstop>
+  <tabstop>paclenInput</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>userSettingsButtons</sender>
+   <signal>accepted()</signal>
+   <receiver>Dialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>userSettingsButtons</sender>
+   <signal>rejected()</signal>
+   <receiver>Dialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
