@@ -18,7 +18,7 @@ set(radioterm_ICON ${ICON_PATH})
 set_source_files_properties(${radioterm_ICON} PROPERTIES MACOSX_PACKAGE_LOCATION Resources)
 file(COPY ${ICON_PATH} DESTINATION "RadioTerm.app/Contents/Resources")
 
-add_executable(RadioTerm src/main.cpp src/mainwindow.cpp src/mainwindow.h)
+add_executable(RadioTerm src/main.cpp src/mainwindow.cpp src/mainwindow.h src/user_settings.cpp src/user_settings.h)
 
 set_target_properties(RadioTerm PROPERTIES MACOSX_BUNDLE_ICONFILE ${ICON_NAME})
 target_link_libraries(RadioTerm Qt5::Core Qt5::Widgets SQLite3 Boost::filesystem)

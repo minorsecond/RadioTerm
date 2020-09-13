@@ -10,10 +10,16 @@
 
 class MainWindow : public QMainWindow {
 Q_OBJECT
-Ui::MainWindow ui{};
 
 public:
     explicit MainWindow(QWidget *parent = nullptr);
+    ~MainWindow() override;
+
+private:
+    Ui::MainWindow *ui;
+
+private slots:
+    static void open_user_settings_window();
 };
 
 
